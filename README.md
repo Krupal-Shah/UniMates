@@ -55,7 +55,7 @@ To get started with the website, all you got to do is to run the 'main.html' fil
 <!-- CONTACT -->
 ## Contact
 
-Sai Vaishnavi -jattu@ualberta.ca
+Sai Vashnavi -jattu@ualberta.ca
 <br>
 Sai Kiran - sjattu@ualberta.ca
 <br>
