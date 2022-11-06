@@ -2,8 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="logo.jpg">
-    <img src="UniMates/unimates_files/unimates.jpeg" alt="Logo" width="80" height="80">
+    <img src="Krupal-Shah/UniMates/unimates_files/unimates.jpeg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">A one-stop website guide for all the international students entering to Canada.</h3>
