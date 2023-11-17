@@ -1,0 +1,66 @@
+.header__text{
+    font-family: "Dancing Script";
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 2.5rem;
+    padding-bottom: 1rem;
+    color: $color-black;
+}
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+
+    &--main{
+        display: block;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+        animation: moveinleft 3s;
+        margin: 4rem 0;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+        animation: moveinright 3s; 
+        margin-bottom: 5rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    // background-image: linear-gradient(to right, $color-primary-green-dark-1, $color-primary-green-dark-1);
+    background-color: $color-primary-blue-dark-1;
+    background-clip: unset;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;    
+
+    &:hover{
+        transform: scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);   
+    }
+}
+
+.heading-tertiary{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}   
+
+.paragraph {
+    font-size: 2rem;
+    margin: 3rem;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}

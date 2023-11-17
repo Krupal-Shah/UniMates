@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-dark-2);
+    // background-image: linear-gradient(to right bottom, #F0F8FF, #bddcef);
+    background-image: linear-gradient(to right bottom, $color-background-light, $color-background-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}

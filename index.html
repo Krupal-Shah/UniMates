@@ -1,149 +1,103 @@
 <!DOCTYPE html>
-<html>
-    <head><title> UniMates </title>
-    <body text="black">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    * {box-sizing: border-box;}
-    
-    body { 
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    }
-    
-    .header {
-    overflow: hidden;
-    background-color: cent;
-    }
-    
-    .header a {
-    float: left;
-    color: black;
-    text-align: left;
-    padding: 11px;
-    text-decoration: none;
-    font-size: 25px; 
-    text-align: left;
-    }
-    
-    .header a.logo {
-    font-size: 40px;
-    font-weight: bold;
-    color: black
-    }
-    
-    .header a:hover {
-        color: black;
-    }
-    
-    .header a.active {
-    background-color: white;
-    color: black;
-    }
-    
-    .header-right {
-    float: right;
-    }
-    
-
-    @media screen and (max-width: 500px) {
-      .header a {
-        float: none;
-        display: block;
-      }
-      .header-center {
-        float: none;
-        text-align: center;
-      }
-    }
-
-    hr {
-          width: 100%;
-          height: 3px;
-          margin-left: auto;
-          margin-right: auto;
-          background-color: black;
-          border: 0 none;
-        }
-    
-    div.a {  
-      width: 90%;
-      margin-left: 60px;
-      word-wrap: normal;  
-      
-    }  
-    back_color {
-      background-color: gray;
-  }
-
-    </style>
-    </head>
-    <body>
-      
-      <div class="header">
-        <table style="border-collapse: collapse; border-style: hidden;">
-            <tr style="border: 20px solid white;">
-                <td>
-                    <a href="main.html" class="logo"><img src="Unimates_files/unimates.jpeg" width = 35%></a>
-                </td>
-                <td>
-                    <div class="header-right">
-                        <a class="active" href="Accomodation.html">Accomodation</a>
-                        <a href="Mental_health.html">Mental Health</a>
-                        <a href="Blogs.html">Blogs</a>
-                        <a href="Crime_rates.html">Crime Rates</a>
-                        <a href="Weather.html">Weather</a>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <hr>
-    <div>
-      <img src="Unimates_files/edmonton.gif" width = 100% height= 150%></img>
-      <h1 style="text-align:left; margin-left: 30px;">About UniMates</h1>
-      <br>
-      <div class="a">
-          <p style="margin-left: 80px; text-align: left; font-size: 25px; font-family: 'Times New Roman', Times, serif;">Shifting to another country from your homeland and entering
-          a multi-cultured society could be difficult. Even the founders and the team mates had faced a similar struggle 
-          and were not able to easily find resources to adjust to this new and wonderful part of their journey. This led us
-          creating UniMates, an all-in-one website which guides the international students to easily adjust to this new 
-          lifetsyle. 
-          </p>
-        </div>
-      <br>
-      <br>
-    </div>
-
-
-    <div style="background-color:rgb(228, 228, 228)">
-      <br>
-      <img src = 'UniMates_files/unimates.jpeg' width = '100px'>
-      <br>
-      <br>
-      <table align="center">
-        <tr>
-          <td>
-            <a href="https://www.facebook.com"><img src = Logos/facebook.png width = '45px' ></a>
-          </td>
-          <td>
-            <a href="https://www.instagram.com"><img src = Logos/instagram.png width = '45px'></a>
-          </td>
-          <td>
-            <a href="https://www.twitter.com"><img src = Logos/twitter.png width = '45px'></a>
-          </td>
-          <td>
-            <a href="https://www.ca.linkedin.com"><img src = Logos/linkedin.png width = '50px'></a>
-          </td>
-        </tr>
-      </table>
-      <p>
-      <a href="about.html" style="border-bottom: 3px solid red; text-decoration: none;">Meet the Team</a> | 
-      <a href="contact.html"style="border-bottom: 3px solid red; text-decoration: none;">Contact Us</a>
-      </p>
-      <br>
-    </div>
-  </body>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="scss/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="img/unimates.jpeg">
+    <title>Unimates | A guide to all students</title>
 </head>
+
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="pages/about.html" class="navigation__link"><span>01</span>About Unimates</a></li>
+                <li class="navigation__item"><a href="pages/blog.html" class="navigation__link"><span>02</span>Blogs</a></li>
+                <li class="navigation__item"><a href="pages/contact.html" class="navigation__link"><span>03</span>Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+        <div class="header__logo-box">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo" class="header__logo">
+            </a>
+        </div>
+        <div class="header__video">
+            <video class="header__videocontent" autoplay muted loop>
+                <source src="img/video.mp4" type="video/mp4">
+                <source src="img/video.webm" type="video/webm">
+                Your browser does not support videos!
+            </video>
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary u-color-white"> 
+                <span class="heading-primary--main"> UniMates </span>
+                <span class="heading-primary--sub"> Moving to Canada could not be any easier !!! </span>
+             </h1>
+        </div>
+
+        <div class="scrolldown-wrapper animation-delay">
+            <div class="scrolldown">
+                <svg height="30" width="10">
+                    <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                    <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__row">
+                <a href="mailto:krupalhi@ualberta.ca">
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-mail4"></use>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/krupalshah74/">
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/__krupsskiii/?next=%2Fkrupal__shah%2F">
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a href="https://github.com/Krupal-Shah">
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg>
+                </a>
+            </div>
+        
+            <div class="footer__row">
+                <ul class="row">
+                    <li><a href="/pages/contact.html">Contact us</a></li>
+                    <li><a href="/pages/about.html">Meet the team</a></li>
+                    <li><a href="/pages/t_c.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        
+            <div class="copyright">
+                UniMates Copyright © 2023 UniMates - All rights reserved || Designed By: Krupal Shah 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

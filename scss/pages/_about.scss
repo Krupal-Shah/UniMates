@@ -1,0 +1,27 @@
+.about{
+    background-color: $color-white;
+    padding: 10rem 5rem;
+
+    &__heading{
+        margin: 4rem;
+        padding: 2rem;
+        width: 20rem;
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+}
+
+.image{
+    margin: 12rem 0;
+    padding: 0 5rem;
+}
+
+.team{
+    padding: 6rem;
+    background-color: $color-primary-blue-light-2;
+    img{
+        width: 13rem;
+        height: 20rem;
+    }
+}
+

@@ -1,0 +1,26 @@
+.u-center-text {
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+.u-margin-bottom{
+    margin-bottom: 4rem !important;
+}
+
+.u-margin-left{
+    margin-left: 6rem !important;
+}
+
+.u-color-black{
+    color: $color-black;
+	fill: $color-black;
+}
+
+.u-color-white{
+    color: $color-white;
+    text-shadow: 1rem 1rem 1rem black;
+}
+
+.u-border-black{
+    border: 2px solid $color-black;
+}
