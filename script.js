@@ -529,7 +529,7 @@ Canada's rich cultural tapestry and storied history have shaped a nation known f
 let stringContent = ``;
 function addBlog(value){
     stringContent += `
-        <a href="/pages/blogpage.html#1">
+    <a href="/pages/blogpage.html#${value}">
             <section class="blog">
                 <div>
                     <img src="../img/${data[value]['image1']}" alt="${data[value]['title']}" class="blog__image">
